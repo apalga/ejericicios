@@ -13,20 +13,20 @@ const numeros = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
 //* La función se debe llamar divisiblePorTres
 
 
-function calcularCuadrados(arreglo = []) {
-    const numeros = Object.values(arreglo);
-    let NuevoArreglo =[];
-    for(let i of numeros) {
 
-        if (numeros %3 ==0) {
+function ejercicio1(arr) {
 
-            i=i;
-            NuevoArreglo.push(i);
-            } 
+    let NuevoArreglo = [];
+    arr.forEach((value, index, array) => {
 
+        if (value % 3 == 0) {
+
+            NuevoArreglo.push(value);
+            console.log(NuevoArreglo);
         }
-  
- 
-    return NuevoArreglo;
- }
- console.log(calcularCuadrados(numeros))
+
+
+    });
+}
+
+
